@@ -1,0 +1,25 @@
+Attribution: Jacob A Brennan
+
+I completed all steps, 1 through 6, of the program. To verify:
+
+Build:
+You can build either by running the bash script `compileOS.sh` or via make.
+Load and boot the resultant file `diskc.img` in the emulator as usual.
+
+Verify:
+Once the emulated machine boots you should see the shell prompt "AHOY>"
+Enter the provided commands to test the following functionality:
+    type messag : This shows that the "type" command is correctly implemented
+    type : This prints an error message that the user needs to specify a file
+    type asdf : This prints an error message that the file was not found
+    exec tstpr2 : This shows that the shell will run again once tstpr2 terminates
+    exec : This prints an error message that the user needs to specify a file
+    exec asdf : This prints an error message that the file was not found
+    type tstpr2 : This prints garbage
+    exec messag : This runs garbage!
+
+I used the following pages while working on this assignment:
+- https://stackoverflow.com/questions/42655177/how-can-i-delete-a-file-only-if-it-exists
+
+I listened to the following music while working on this assignment:
+- https://watchhouse.bandcamp.com/music
